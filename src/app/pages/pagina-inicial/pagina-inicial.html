@@ -102,6 +102,42 @@
     </div>
   </section>
 
+  <!-- Produtos em destaque -->
+  <section class="produtos-destaque container">
+    <div class="cabecalho-home">
+      <h2 class="titulo-secao">
+        Produtos em <span class="cor-primaria">destaque</span>
+      </h2>
+      <p>Os queridinhos dos nossos clientes com qualidade premium.</p>
+    </div>
+    <div class="grade-produtos">
+      <!-- Adesivos -->
+      <div class="card-produto">
+        <img
+          src="/assets/adesivos-casabaruch.png"
+          alt="Adesivos Casa Baruch"
+          class="imagem-produto"
+        />
+        <div class="conteudo-card">
+          <h3>Adesivos</h3>
+          <p>Personalizados em diversos formatos e materiais.</p>
+        </div>
+      </div>
+      <!-- Etiquetas Escolares -->
+      <div class="card-produto">
+        <img
+          src="/assets/etiqueta-infantil.png"
+          alt="Etiqueta Escolar personalizada"
+          class="imagem-produto"
+        />
+        <div class="conteudo-card">
+          <h3>Etiquetas Escolares</h3>
+          <p>Para cadernos, livros, lápis e canetas. À prova d’água.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Sobre -->
   <section class="secao-sobre-home">
     <div class="container grade-sobre-home">
@@ -110,9 +146,8 @@
           Conheça a <span class="cor-primaria">Casa Baruch</span>
         </h2>
         <p class="destaque-sobre-home">
-          "Baruch" significa "abençoado"/"abençoada" em hebraico. Somos uma
-          família com mais de 10 anos de experiência transformando ideias em
-          realidade.
+          "Baruch" significa "abençoado" ou "abençoada" em hebraico. Somos uma
+          família apaixonada por transformar ideias em realidade.
         </p>
         <p>
           Nascemos da paixão por criar. Hoje, unimos gráfica rápida e estamparia
@@ -271,14 +306,14 @@
     </div>
   </section>
 
-  <!-- Linha Infantil & Escolar -->
-  <section id="infantil" class="secao-produtos-home">
+  <!-- Linha Escolar -->
+  <section id="escolar" class="secao-produtos-home">
     <div class="container">
       <div class="cabecalho-home">
         <h2 class="titulo-secao">
-          Linha <span class="cor-primaria">Infantil & Escolar</span>
+          Linha <span class="cor-primaria">Escolar</span>
         </h2>
-        <p>Ideal para volta às aulas e organização dos pequenos.</p>
+        <p>Ideal para organização e volta às aulas.</p>
       </div>
       <div class="grade-produtos-detalhe">
         <div *ngFor="let p of produtosEscolares" class="card-produto-detalhe">
@@ -303,14 +338,14 @@
     </div>
   </section>
 
-  <!-- Festa Infantil -->
-  <section id="festa" class="secao-produtos-home bg-secondary">
+  <!-- Linha Infantil e Festas -->
+  <section id="infantil" class="secao-produtos-home bg-secondary">
     <div class="container">
       <div class="cabecalho-home">
         <h2 class="titulo-secao">
-          Kit <span class="cor-primaria">Festa Infantil</span>
+          Linha <span class="cor-primaria">Infantil & Festas</span>
         </h2>
-        <p>Tudo para uma festa inesquecível e personalizada.</p>
+        <p>Tudo para tornar cada festa inesquecível e personalizada.</p>
       </div>
       <div class="grade-produtos-detalhe">
         <div *ngFor="let p of produtosFesta" class="card-produto-detalhe">
@@ -330,38 +365,6 @@
           class="botao-hero-primary"
         >
           Personalizar meu kit festa
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Decoração e Pedagógico -->
-  <section class="secao-produtos-home">
-    <div class="container">
-      <div class="cabecalho-home">
-        <h2 class="titulo-secao">
-          Decoração & <span class="cor-primaria">Pedagógico</span>
-        </h2>
-        <p>Para o quarto, para a escola e para presentear.</p>
-      </div>
-      <div class="grade-produtos-detalhe">
-        <div *ngFor="let p of produtosInfantil" class="card-produto-detalhe">
-          <div class="imagem-produto">
-            <img [src]="p.imagem" [alt]="p.nome" />
-          </div>
-          <div class="info-produto">
-            <h3>{{ p.nome }}</h3>
-            <p>{{ p.descricao }}</p>
-          </div>
-        </div>
-      </div>
-      <div class="cta-meio-pagina">
-        <a
-          href="https://wa.me/5511922732828"
-          target="_blank"
-          class="botao-hero-primary"
-        >
-          Ver opções pedagógicas
         </a>
       </div>
     </div>
@@ -566,30 +569,3 @@
     </div>
   </section>
 </main>
-
-<!-- Produtos em destaque -->
-<section class="produtos-destaque container">
-  <h2 class="titulo-secao">Produtos em destaque</h2>
-  <div class="grade-produtos">
-    <!-- Adesivos -->
-    <div class="card-produto">
-      <img
-        src="assets/produtos/adesivo-casa-baruch.jpg"
-        alt="Adesivos Casa Baruch"
-        class="imagem-produto"
-      />
-      <h3>Adesivos</h3>
-      <p>Personalizados em diversos formatos e materiais.</p>
-    </div>
-    <!-- Etiquetas Escolares -->
-    <div class="card-produto">
-      <img
-        src="assets/produtos/etiqueta-escolar.jpg"
-        alt="Etiqueta Escolar personalizada"
-        class="imagem-produto"
-      />
-      <h3>Etiquetas Escolares</h3>
-      <p>Para cadernos, livros, lápis e canetas. À prova d’água.</p>
-    </div>
-  </div>
-</section>

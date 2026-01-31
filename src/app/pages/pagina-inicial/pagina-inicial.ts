@@ -21,7 +21,7 @@ export class PaginaInicialComponent {
     {
       nome: 'Adesivos',
       descricao: 'Personalizados em diversos formatos e materiais.',
-      imagem: 'assets/adesivos-casabaruch.png',
+      imagem: '/assets/adesivos-casabaruch.png',
     },
     {
       nome: 'Cartões de Visita',
@@ -31,7 +31,7 @@ export class PaginaInicialComponent {
     {
       nome: 'Tags e Etiquetas',
       descricao: 'O toque final perfeito para seus produtos.',
-      imagem: 'assets/tags.jpg',
+      imagem: '/assets/tags.png',
     },
   ];
 
@@ -39,7 +39,7 @@ export class PaginaInicialComponent {
     {
       nome: 'Camisetas',
       descricao: 'Estampas duráveis com cores vibrantes.',
-      imagem: 'assets/camisetas.jpg',
+      imagem: '/assets/camisa-personalizada-lorrane.dev.png',
     },
     {
       nome: 'Toalinhas e Canecas',
@@ -57,55 +57,39 @@ export class PaginaInicialComponent {
     {
       nome: 'Etiquetas Escolares',
       descricao: 'Para cadernos, livros, lápis e canetas. À prova d’água.',
-      imagem: 'assets/etiquetas-escolares.jpg',
+      imagem: '/assets/etiqueta-infantil.png',
     },
     {
-      nome: 'Capas e Agendas',
-      descricao: 'Capas de caderno, livros e agendas personalizadas.',
-      imagem: 'assets/agendas-escolares.jpg',
-    },
-    {
-      nome: 'Identificação',
-      descricao: 'Cartão de aluno e horários escolares impressos.',
+      nome: 'Tags de Mochila',
+      descricao: 'Tags rígidas para identificação de mochilas e lancheiras.',
       imagem: 'assets/identificacao-aluno.jpg',
+    },
+    {
+      nome: 'Certificados e Pedagógico',
+      descricao: 'Certificados, flashcards e cartazes para professores.',
+      imagem: 'assets/pedagogico.jpg',
     },
   ];
 
   produtosFesta = [
     {
-      nome: 'Kit Festa Infantil',
-      descricao: 'Combo com topper de bolo, bandeirolas e adesivos.',
-      imagem: 'assets/kit-festa.jpg',
-    },
-    {
       nome: 'Topper de Bolo e Tags',
       descricao: 'Tags para lembrancinhas e toppers personalizados.',
-      imagem: 'assets/topper-bolo.jpg',
+      imagem: '/assets/topper-de-bolo.png',
     },
     {
       nome: 'Rótulos e Convites',
       descricao: 'Convites digitais/impressos e rótulos para guloseimas.',
-      imagem: 'assets/convites-festa.jpg',
-    },
-  ];
-
-  produtosInfantil = [
-    {
-      nome: 'Decoração do Quarto',
-      descricao: 'Quadros, posters educativos e réguas de crescimento.',
-      imagem: 'assets/decoracao-infantil.jpg',
+      imagem: '/assets/convite.png',
     },
     {
       nome: 'Lembrancinhas',
       descricao: 'Sacolinhas, caixinhas milk e cartões de agradecimento.',
       imagem: 'assets/lembrancinhas.jpg',
     },
-    {
-      nome: 'Educativo e Pedagógico',
-      descricao: 'Flashcards, certificados e cartazes para professores.',
-      imagem: 'assets/pedagogico.jpg',
-    },
   ];
+
+  produtosInfantil = [];
 
   estatisticas = [
     { valor: '100%', rotulo: 'Qualidade Garantida' },

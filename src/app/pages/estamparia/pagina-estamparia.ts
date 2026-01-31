@@ -14,7 +14,7 @@ export class PaginaEstampariaComponent {
     {
       nome: 'Camisetas Personalizadas',
       descricao: 'Algodão premium, diversos tamanhos e cores. Estampa duradoura.',
-      imagem: 'assets/produto-camisetas.jpg',
+      imagem: '/assets/camisa-personalizada-lorrane.dev.png',
     },
     {
       nome: 'Canecas',

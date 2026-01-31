@@ -14,7 +14,7 @@ export class PaginaGraficaComponent {
     {
       nome: 'Adesivos Personalizados',
       descricao: 'Vinil, papel, transparente. Diversos formatos e acabamentos.',
-      imagem: 'assets/produto-adesivos.jpg',
+      imagem: '/assets/adesivos-casabaruch.png',
     },
     {
       nome: 'Cartões de Visita',
@@ -24,7 +24,7 @@ export class PaginaGraficaComponent {
     {
       nome: 'Tags e Etiquetas',
       descricao: 'Tags para roupas, etiquetas para produtos, com furo ou adesivas.',
-      imagem: 'assets/produto-tags.jpg',
+      imagem: '/assets/tags.png',
     },
     {
       nome: 'Folders e Panfletos',

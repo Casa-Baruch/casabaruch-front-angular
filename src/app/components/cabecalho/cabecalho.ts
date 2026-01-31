@@ -22,8 +22,8 @@ export class CabecalhoComponent {
 
   links: LinkNavegacao[] = [
     { rota: '/', rotulo: 'Início' },
-    { rota: '/', rotulo: 'Infantil & Escolar', fragmento: 'infantil' },
-    { rota: '/', rotulo: 'Festa', fragmento: 'festa' },
+    { rota: '/', rotulo: 'Linha Escolar', fragmento: 'escolar' },
+    { rota: '/', rotulo: 'Infantil & Festas', fragmento: 'infantil' },
     { rota: '/', rotulo: 'Para empresas', fragmento: 'solucoes' },
     { rota: '/', rotulo: 'Contato', fragmento: 'contato' }
   ];
