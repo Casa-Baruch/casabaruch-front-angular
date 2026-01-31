@@ -1,0 +1,595 @@
+<main class="pagina-inicial">
+  <!-- Hero (Atenção) -->
+  <section class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="grid-hero">
+        <div class="info-hero">
+          <h1 class="titulo-home">
+            Sua ideia vira produto profissional
+            <span class="cor-primaria">rápido e com qualidade premium</span>
+          </h1>
+
+          <p class="paragrafo-home">
+            Gráfica e estamparia personalizadas para quem não aceita erro,
+            atraso ou impressão comum.
+          </p>
+
+          <div class="acoes-home">
+            <a
+              href="https://wa.me/5511922732828"
+              target="_blank"
+              class="botao-hero-primary"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.1c-.24.67-1.39 1.28-1.91 1.36-.52.08-1.04.13-2.9-.6-2.39-.94-3.93-3.38-4.05-3.54-.12-.16-.97-1.29-.97-2.46 0-1.17.61-1.75.82-1.99.21-.24.46-.3.61-.3.15 0 .3.01.43.01.14 0 .33-.05.5.37.17.43.6 1.46.65 1.58.05.12.09.25.01.43-.08.18-.12.3-.25.45-.13.15-.26.33-.38.45-.12.12-.25.26-.1.52.15.26.67 1.11 1.43 1.79.98.88 1.8 1.15 2.06 1.28.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.22.57-.13.23.09 1.46.69 1.71.81.25.12.42.18.48.29.06.11.06.63-.18 1.3z"
+                />
+              </svg>
+              Solicitar orçamento no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="imagem-hero-wrapper">
+          <div class="moldura-hero">
+            <img
+              src="assets/hero-home.jpg"
+              alt="Casa Baruch Impressão de Qualidade"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Dor (Conexão) -->
+  <section class="secao-dor-home">
+    <div class="container">
+      <div class="card-dor">
+        <div class="texto-dor">
+          <h2>
+            Cansado de atrasos, impressão sem qualidade ou fornecedores que
+            somem?
+          </h2>
+          <p>
+            Na Casa Baruch, seu pedido é tratado com atenção do início à
+            entrega. Garantimos que sua marca chegue impecável às mãos do seu
+            cliente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos (Prova) -->
+  <section class="secao-depoimentos container">
+    <div class="cabecalho-home">
+      <h2 class="titulo-secao">
+        Quem confia, <span class="cor-primaria">recomenda</span>
+      </h2>
+      <p>A satisfação de nossos clientes é o que nos move todos os dias.</p>
+    </div>
+
+    <div class="grade-depoimentos">
+      <div *ngFor="let dep of depoimentos" class="card-depoimento">
+        <div class="estrelas">
+          <svg
+            *ngFor="let i of [1,2,3,4,5]"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="#f47c20"
+          >
+            <path
+              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+            />
+          </svg>
+        </div>
+        <p class="texto-depoimento">"{{ dep.texto }}"</p>
+        <div class="autor-depoimento">
+          <div class="info-autor">
+            <strong>{{ dep.nome }}</strong>
+            <span>Cliente Casa Baruch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="secao-sobre-home">
+    <div class="container grade-sobre-home">
+      <div class="info-sobre-home">
+        <h2 class="titulo-secao" style="text-align: left">
+          Conheça a <span class="cor-primaria">Casa Baruch</span>
+        </h2>
+        <p class="destaque-sobre-home">
+          "Baruch" significa "abençoado"/"abençoada" em hebraico. Somos uma
+          família com mais de 10 anos de experiência transformando ideias em
+          realidade.
+        </p>
+        <p>
+          Nascemos da paixão por criar. Hoje, unimos gráfica rápida e estamparia
+          para oferecer produtos que encantam e geram resultados reais para você
+          ou seu negócio.
+        </p>
+
+        <div class="nota-arte">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+            <path d="M2 2l7.5 1.5"></path>
+            <path d="M7.08 7.08L2 2l5.08 5.08z"></path>
+          </svg>
+          <div class="texto-nota">
+            <strong>Criação de Arte:</strong>
+            <span
+              >Não tem a arte pronta? Nossa equipe desenvolve para você
+              (consulte taxas).</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="visual-sobre-home">
+        <div class="logo-vertical-sobre">
+          <app-icone class="icone-grande"></app-icone>
+          <div class="texto-logo">
+            <span class="nome">Casa Baruch</span>
+            <span class="sub">Gráfica & Estamparia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais (Qualidade) -->
+  <section class="secao-diferenciais-home container">
+    <div class="estatisticas-home">
+      <div *ngFor="let est of estatisticas" class="estatistica-item">
+        <span class="valor-est">{{ est.valor }}</span>
+        <span class="rotulo-est">{{ est.rotulo }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soluções (Solução) -->
+  <section id="solucoes" class="secao-servicos-home container">
+    <div class="cabecalho-home">
+      <h2 class="titulo-secao">
+        Tudo o que sua marca
+        <span class="cor-primaria">precisa para se destacar</span>
+      </h2>
+      <p>
+        Do impresso ao personalizado, entregamos soluções completas para você.
+      </p>
+    </div>
+
+    <div class="grade-cards-home">
+      <!-- Card Gráfica -->
+      <div class="card-servico-home grafica-card">
+        <div class="conteudo-servico">
+          <div class="icone-servico-home bg-grafica">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 6 2 18 2 18 9" />
+              <path
+                d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+              />
+              <rect x="6" y="14" width="12" height="8" />
+            </svg>
+          </div>
+          <h3>Gráfica Rápida</h3>
+          <p>
+            Adesivos, etiquetas, cartões de visita e tags com impressão premium
+            e entrega agilizada.
+          </p>
+          <ul class="lista-servico-home">
+            <li>Adesivos de alta aderência</li>
+            <li>Cartões de visita que impactam</li>
+            <li>Tags e etiquetas personalizadas</li>
+          </ul>
+          <a href="#grafica" class="botao-servico btn-grafica">
+            Ver soluções de gráfica
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card Estamparia -->
+      <div class="card-servico-home estamparia-card">
+        <div class="conteudo-servico">
+          <div class="icone-servico-home bg-estamparia">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"
+              />
+            </svg>
+          </div>
+          <h3>Estamparia Exclusiva</h3>
+          <p>
+            Camisetas, canecas e brindes que carregam sua marca com estilo e
+            durabilidade.
+          </p>
+          <ul class="lista-servico-home">
+            <li>Camisetas em diversas malhas</li>
+            <li>Canecas e brindes duráveis</li>
+            <li>Ecobags e acessórios</li>
+          </ul>
+          <a href="#estamparia" class="botao-servico btn-estamparia">
+            Ver soluções de estamparia
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linha Infantil & Escolar -->
+  <section id="infantil" class="secao-produtos-home">
+    <div class="container">
+      <div class="cabecalho-home">
+        <h2 class="titulo-secao">
+          Linha <span class="cor-primaria">Infantil & Escolar</span>
+        </h2>
+        <p>Ideal para volta às aulas e organização dos pequenos.</p>
+      </div>
+      <div class="grade-produtos-detalhe">
+        <div *ngFor="let p of produtosEscolares" class="card-produto-detalhe">
+          <div class="imagem-produto">
+            <img [src]="p.imagem" [alt]="p.nome" />
+          </div>
+          <div class="info-produto">
+            <h3>{{ p.nome }}</h3>
+            <p>{{ p.descricao }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-meio-pagina">
+        <a
+          href="https://wa.me/5511922732828"
+          target="_blank"
+          class="botao-hero-primary"
+        >
+          Quero etiquetas e materiais escolares
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Festa Infantil -->
+  <section id="festa" class="secao-produtos-home bg-secondary">
+    <div class="container">
+      <div class="cabecalho-home">
+        <h2 class="titulo-secao">
+          Kit <span class="cor-primaria">Festa Infantil</span>
+        </h2>
+        <p>Tudo para uma festa inesquecível e personalizada.</p>
+      </div>
+      <div class="grade-produtos-detalhe">
+        <div *ngFor="let p of produtosFesta" class="card-produto-detalhe">
+          <div class="imagem-produto">
+            <img [src]="p.imagem" [alt]="p.nome" />
+          </div>
+          <div class="info-produto">
+            <h3>{{ p.nome }}</h3>
+            <p>{{ p.descricao }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-meio-pagina">
+        <a
+          href="https://wa.me/5511922732828"
+          target="_blank"
+          class="botao-hero-primary"
+        >
+          Personalizar meu kit festa
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decoração e Pedagógico -->
+  <section class="secao-produtos-home">
+    <div class="container">
+      <div class="cabecalho-home">
+        <h2 class="titulo-secao">
+          Decoração & <span class="cor-primaria">Pedagógico</span>
+        </h2>
+        <p>Para o quarto, para a escola e para presentear.</p>
+      </div>
+      <div class="grade-produtos-detalhe">
+        <div *ngFor="let p of produtosInfantil" class="card-produto-detalhe">
+          <div class="imagem-produto">
+            <img [src]="p.imagem" [alt]="p.nome" />
+          </div>
+          <div class="info-produto">
+            <h3>{{ p.nome }}</h3>
+            <p>{{ p.descricao }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-meio-pagina">
+        <a
+          href="https://wa.me/5511922732828"
+          target="_blank"
+          class="botao-hero-primary"
+        >
+          Ver opções pedagógicas
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detalhes Gráfica -->
+  <section id="grafica" class="secao-produtos-home container">
+    <div class="cabecalho-home">
+      <h2 class="titulo-secao">
+        Detalhes que fazem sua marca
+        <span class="cor-grafica">parecer profissional</span>
+      </h2>
+      <p>Materiais de alta qualidade para elevar sua comunicação visual.</p>
+    </div>
+    <div class="grade-produtos-detalhe">
+      <div *ngFor="let p of produtosGrafica" class="card-produto-detalhe">
+        <div class="imagem-produto">
+          <img [src]="p.imagem" [alt]="p.nome" />
+        </div>
+        <div class="info-produto">
+          <h3>{{ p.nome }}</h3>
+          <p>{{ p.descricao }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="cta-meio-pagina">
+      <a
+        href="https://wa.me/5511922732828"
+        target="_blank"
+        class="botao-hero-primary"
+      >
+        Solicitar orçamento de gráfica
+      </a>
+    </div>
+  </section>
+
+  <!-- Detalhes Estamparia -->
+  <section id="estamparia" class="secao-produtos-home bg-secondary">
+    <div class="container">
+      <div class="cabecalho-home">
+        <h2 class="titulo-secao">
+          Estamparia <span class="cor-estamparia">Personalizada</span>
+        </h2>
+        <p>Produtos únicos criados com cuidado e precisão.</p>
+      </div>
+      <div class="grade-produtos-detalhe">
+        <div *ngFor="let p of produtosEstamparia" class="card-produto-detalhe">
+          <div class="imagem-produto">
+            <img [src]="p.imagem" [alt]="p.nome" />
+          </div>
+          <div class="info-produto">
+            <h3>{{ p.nome }}</h3>
+            <p>{{ p.descricao }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-meio-pagina">
+        <a
+          href="https://wa.me/5511922732828"
+          target="_blank"
+          class="botao-hero-primary"
+        >
+          Solicitar orçamento de estamparia
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (Objeções) -->
+  <section id="faq" class="secao-faq container">
+    <div class="cabecalho-home">
+      <h2 class="titulo-secao">
+        Dúvidas <span class="cor-primaria">Frequentes</span>
+      </h2>
+      <p>
+        Tudo o que você precisa saber para fazer seu pedido com tranquilidade.
+      </p>
+    </div>
+    <div class="grade-faq">
+      <div
+        *ngFor="let faq of faqs; let i = index"
+        class="card-faq"
+        [class.aberto]="faqAberto === i"
+        (click)="toggleFaq(i)"
+      >
+        <div class="pergunta-faq">
+          <h3>{{ faq.q }}</h3>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            class="icone-chevron"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+        <div class="resposta-faq">
+          <p>{{ faq.a }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato & CTA Final (Ação) -->
+  <section id="contato" class="secao-contato container">
+    <div class="cabecalho-home">
+      <h2 class="titulo-secao">
+        Vamos transformar <span class="cor-primaria">sua ideia?</span>
+      </h2>
+      <p>Escolha o melhor canal e fale com a gente agora.</p>
+    </div>
+
+    <div class="grade-contato">
+      <div class="card-contato">
+        <div class="icone-contato bg-whatsapp">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.1c-.24.67-1.39 1.28-1.91 1.36-.52.08-1.04.13-2.9-.6-2.39-.94-3.93-3.38-4.05-3.54-.12-.16-.97-1.29-.97-2.46 0-1.17.61-1.75.82-1.99.21-.24.46-.3.61-.3.15 0 .3.01.43.01.14 0 .33-.05.5.37.17.43.6 1.46.65 1.58.05.12.09.25.01.43-.08.18-.12.3-.25.45-.13.15-.26.33-.38.45-.12.12-.25.26-.1.52.15.26.67 1.11 1.43 1.79.98.88 1.8 1.15 2.06 1.28.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.22.57-.13.23.09 1.46.69 1.71.81.25.12.42.18.48.29.06.11.06.63-.18 1.3z"
+            />
+          </svg>
+        </div>
+        <h3>WhatsApp</h3>
+        <p>Orçamentos rápidos e atendimento direto.</p>
+        <a
+          href="https://wa.me/5511922732828"
+          target="_blank"
+          class="link-contato"
+          >(11) 92273-2828</a
+        >
+      </div>
+
+      <div class="card-contato">
+        <div class="icone-contato bg-primary">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </div>
+        <h3>E-mail</h3>
+        <p>Envie artes pesadas ou solicitações formais.</p>
+        <a href="mailto:contato&#64;casabaruch.com" class="link-contato"
+          >contato&#64;casabaruch.com</a
+        >
+      </div>
+
+      <div class="card-contato">
+        <div class="icone-contato bg-accent">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+        </div>
+        <h3>Entregas</h3>
+        <p>Enviamos para todo o Brasil com rapidez.</p>
+        <span class="texto-contato">São Paulo, SP</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final Persuasivo -->
+  <section class="cta-final-home">
+    <div class="container text-center">
+      <h2 class="titulo-secao" style="color: white">
+        Não deixe sua ideia para depois
+      </h2>
+      <p>
+        Vamos tirar sua ideia do papel e entregar algo que você vai se orgulhar.
+      </p>
+      <a
+        href="https://wa.me/5511922732828"
+        target="_blank"
+        class="botao-whats-final-home"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.396-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 7.63h-.006c-1.857 0-3.678-.5-5.267-1.442l-.379-.225-3.913 1.026 1.044-3.815-.247-.392A9.136 9.136 0 014.112 12.06c0-5.057 4.113-9.17 9.176-9.17 2.45 0 4.753.954 6.482 2.688a9.111 9.111 0 012.688 6.482c0 5.058-4.113 9.17-9.176 9.17m8.529-17.708C19.045 2.1 16.458 1 13.713 1 7.534 1 2.5 6.034 2.5 12.212c0 1.974.517 3.898 1.5 5.606L1 24l6.339-1.662c1.644.897 3.484 1.37 5.365 1.37h.011c6.179 0 11.213-5.034 11.213-11.213 0-2.996-1.164-5.812-3.277-7.926z"
+          />
+        </svg>
+        Quero transformar minha ideia em produto profissional
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- Produtos em destaque -->
+<section class="produtos-destaque container">
+  <h2 class="titulo-secao">Produtos em destaque</h2>
+  <div class="grade-produtos">
+    <!-- Adesivos -->
+    <div class="card-produto">
+      <img
+        src="assets/produtos/adesivo-casa-baruch.jpg"
+        alt="Adesivos Casa Baruch"
+        class="imagem-produto"
+      />
+      <h3>Adesivos</h3>
+      <p>Personalizados em diversos formatos e materiais.</p>
+    </div>
+    <!-- Etiquetas Escolares -->
+    <div class="card-produto">
+      <img
+        src="assets/produtos/etiqueta-escolar.jpg"
+        alt="Etiqueta Escolar personalizada"
+        class="imagem-produto"
+      />
+      <h3>Etiquetas Escolares</h3>
+      <p>Para cadernos, livros, lápis e canetas. À prova d’água.</p>
+    </div>
+  </div>
+</section>

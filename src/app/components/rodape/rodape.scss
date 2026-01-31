@@ -1,0 +1,105 @@
+.rodape {
+  background: #1e293b;
+  color: white;
+  padding-top: 6rem;
+}
+
+.conteudo {
+  padding-bottom: 6rem;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  }
+}
+
+.logo-rodape {
+  margin-bottom: 1.5rem;
+  display: block;
+
+  ::ng-deep .nome {
+    color: white !important;
+  }
+  ::ng-deep .subtitulo {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+}
+
+.descricao {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--font-sm);
+  line-height: 1.7;
+  max-width: 300px;
+}
+
+.titulo-coluna {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--font-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+}
+
+.links,
+.lista-servicos,
+.infos-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.links a,
+.lista-servicos li,
+.info {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  font-size: var(--font-sm);
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.links a:hover,
+.info:hover {
+  color: white;
+}
+
+.info:hover {
+  color: var(--primary);
+}
+
+.barra-inferior {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem 0;
+}
+
+.flex-inferior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: var(--font-xs);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    font-weight: 600;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

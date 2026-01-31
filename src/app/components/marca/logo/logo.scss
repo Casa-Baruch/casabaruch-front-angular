@@ -1,0 +1,41 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.icone {
+  width: 40px;
+  height: 40px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  color: var(--foreground);
+}
+
+.subtitulo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.55rem;
+  color: var(--muted-foreground);
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 2px;
+}

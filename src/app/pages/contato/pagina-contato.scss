@@ -1,0 +1,199 @@
+.hero {
+  padding-top: 120px;
+  padding-bottom: 6rem;
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+    color: var(--muted-foreground);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.cor-primaria {
+  color: var(--primary);
+}
+
+.secao-cta {
+  padding-bottom: 6rem;
+}
+
+.card-whats {
+  padding: 4rem 2rem;
+  border-radius: 2.5rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+  box-shadow: var(--shadow-whatsapp);
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.icone-whats-grande {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+}
+
+.botao-whats-card {
+  background: white;
+  color: var(--whatsapp);
+  font-size: 1.5rem;
+  &:hover {
+    background: #f8f9fa;
+    color: var(--whatsapp-hover);
+  }
+}
+
+.dica {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+.grade-infos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card-info {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  a,
+  p {
+    color: var(--muted-foreground);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  a:hover {
+    color: var(--primary);
+  }
+}
+
+.icone-info {
+  width: 56px;
+  height: 56px;
+  background: var(--secondary);
+  color: var(--primary);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.secao-local {
+  padding-bottom: 6rem;
+}
+
+.card-local {
+  background: white;
+  padding: 3rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  @media (max-width: 640px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.icone-local {
+  width: 64px;
+  height: 64px;
+  background: var(--secondary);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-local {
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    color: var(--foreground);
+    font-weight: 500;
+  }
+  .detalhe {
+    color: var(--muted-foreground);
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    font-weight: 400;
+  }
+}
+
+.secao-faq {
+  padding: 8rem 0;
+}
+
+.titulo-faq {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.grade-faq {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-faq {
+  background: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-soft);
+  h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    line-height: 1.6;
+  }
+}

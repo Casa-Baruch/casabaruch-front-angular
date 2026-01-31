@@ -1,0 +1,97 @@
+<main class="pagina-grafica">
+  <!-- Hero -->
+  <section class="hero-secao">
+    <div class="container">
+      <a routerLink="/" class="link-voltar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+        </svg>
+        <span>Voltar para início</span>
+      </a>
+
+      <div class="grade-hero animar-entrada">
+        <div class="info-hero">
+          <div class="badge-grafica">Gráfica</div>
+          <h1>Impressão de qualidade com <span class="cor-destaque">entrega expressa</span></h1>
+          <p class="descricao-hero">
+            Adesivos, cartões de visita, etiquetas, tags e muito mais. Tudo o que sua empresa precisa para se destacar no mercado.
+          </p>
+          <a href="https://wa.me/5511922732828?text=Olá! Gostaria de um orçamento para serviços gráficos." target="_blank" class="botao-whatsapp-graf">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.1c-.24.67-1.39 1.28-1.91 1.36-.52.08-1.04.13-2.9-.6-2.39-.94-3.93-3.38-4.05-3.54-.12-.16-.97-1.29-.97-2.46 0-1.17.61-1.75.82-1.99.21-.24.46-.3.61-.3.15 0 .3.01.43.01.14 0 .33-.05.5.37.17.43.6 1.46.65 1.58.05.12.09.25.01.43-.08.18-.12.3-.25.45-.13.15-.26.33-.38.45-.12.12-.25.26-.1.52.15.26.67 1.11 1.43 1.79.98.88 1.8 1.15 2.06 1.28.26.13.41.11.56-.06.15-.17.65-.75.82-1.01.17-.26.34-.22.57-.13.23.09 1.46.69 1.71.81.25.12.42.18.48.29.06.11.06.63-.18 1.3z"/>
+            </svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+        <div class="imagem-hero">
+          <div class="moldura-hero">
+            <img src="assets/grafica-hero.jpg" alt="Gráfica Casa Baruch">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section class="secao-beneficios container">
+    <div class="grade-beneficios">
+      <div *ngFor="let b of beneficios" class="card-beneficio">
+        <div class="icone-beneficio">
+          <svg *ngIf="b.titulo === 'Entrega Rápida'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg *ngIf="b.titulo === 'Alta Qualidade'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          <svg *ngIf="b.titulo === 'Atendimento Ágil'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div class="texto-beneficio">
+          <h3>{{ b.titulo }}</h3>
+          <p>{{ b.descricao }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossos Produtos -->
+  <section class="secao-produtos container">
+    <div class="cabecalho-produtos">
+      <h2 class="titulo-secao">Nossos <span class="cor-destaque">Produtos</span></h2>
+      <p>Soluções gráficas completas para sua empresa</p>
+    </div>
+
+    <div class="grade-produtos">
+      <div *ngFor="let p of produtos" class="card-produto">
+        <div class="imagem-container">
+          <img [src]="p.imagem" [alt]="p.nome">
+        </div>
+        <div class="conteudo-produto">
+          <h3>{{ p.nome }}</h3>
+          <p>{{ p.descricao }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-secao-final">
+      <a href="https://wa.me/5511922732828?text=Olá! Gostaria de um orçamento para serviços gráficos." target="_blank" class="botao-whatsapp-graf">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.396-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 7.63h-.006c-1.857 0-3.678-.5-5.267-1.442l-.379-.225-3.913 1.026 1.044-3.815-.247-.392A9.136 9.136 0 014.112 12.06c0-5.057 4.113-9.17 9.176-9.17 2.45 0 4.753.954 6.482 2.688a9.111 9.111 0 012.688 6.482c0 5.058-4.113 9.17-9.176 9.17m8.529-17.708C19.045 2.1 16.458 1 13.713 1 7.534 1 2.5 6.034 2.5 12.212c0 1.974.517 3.898 1.5 5.606L1 24l6.339-1.662c1.644.897 3.484 1.37 5.365 1.37h.011c6.179 0 11.213-5.034 11.213-11.213 0-2.996-1.164-5.812-3.277-7.926z"/>
+        </svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta-contato">
+    <div class="container text-center">
+      <h2 class="titulo-secao" style="color: white;">Peça seu orçamento agora!</h2>
+      <p>
+        Fale com nossa equipe pelo WhatsApp e receba um orçamento personalizado
+        em minutos.
+      </p>
+      <a href="https://wa.me/5511922732828?text=Olá! Gostaria de um orçamento para serviços gráficos." target="_blank" class="botao-whatsapp-final">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.396-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 7.63h-.006c-1.857 0-3.678-.5-5.267-1.442l-.379-.225-3.913 1.026 1.044-3.815-.247-.392A9.136 9.136 0 014.112 12.06c0-5.057 4.113-9.17 9.176-9.17 2.45 0 4.753.954 6.482 2.688a9.111 9.111 0 012.688 6.482c0 5.058-4.113 9.17-9.176 9.17m8.529-17.708C19.045 2.1 16.458 1 13.713 1 7.534 1 2.5 6.034 2.5 12.212c0 1.974.517 3.898 1.5 5.606L1 24l6.339-1.662c1.644.897 3.484 1.37 5.365 1.37h.011c6.179 0 11.213-5.034 11.213-11.213 0-2.996-1.164-5.812-3.277-7.926z"/>
+            </svg>
+            Falar no WhatsApp
+          </a>
+    </div>
+  </section>
+</main>
