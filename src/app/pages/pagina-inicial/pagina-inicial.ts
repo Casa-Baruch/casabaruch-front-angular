@@ -50,7 +50,7 @@ export class PaginaInicialComponent {
     {
       nome: 'Ecobags',
       descricao: 'Sustentabilidade com o estilo da sua marca.',
-      imagem: 'assets/ecobags.jpg',
+      imagem: 'assets/eco-bag.png',
     },
   ];
 
