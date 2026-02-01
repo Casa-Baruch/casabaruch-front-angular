@@ -85,7 +85,7 @@ export class PaginaInicialComponent {
     {
       nome: 'Lembrancinhas',
       descricao: 'Sacolinhas, caixinhas milk e cartões de agradecimento.',
-      imagem: 'assets/lembrancinhas.jpg',
+      imagem: 'assets/caixa-milk.png',
     },
   ];
 

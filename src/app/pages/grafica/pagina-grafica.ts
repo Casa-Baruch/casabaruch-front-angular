@@ -37,9 +37,9 @@ export class PaginaGraficaComponent {
       imagem: 'assets/produto-banners.jpg',
     },
     {
-      nome: 'Embalagens',
-      descricao: 'Caixas, sacolas, papel de seda personalizados.',
-      imagem: 'assets/produto-embalagens.jpg',
+      nome: 'Embalagens e Lembrancinhas',
+      descricao: 'Caixas milk, sacolas e papel de seda personalizados.',
+      imagem: 'assets/caixa-milk.png',
     },
   ];
 

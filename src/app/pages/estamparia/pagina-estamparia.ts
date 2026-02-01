@@ -24,7 +24,7 @@ export class PaginaEstampariaComponent {
     {
       nome: 'Ecobags',
       descricao: 'Sacolas ecológicas personalizadas. Ótimas para eventos e brindes.',
-      imagem: 'assets/produto-ecobags.jpg',
+      imagem: 'assets/eco-bag.png',
     },
     {
       nome: 'Bonés e Chapéus',
