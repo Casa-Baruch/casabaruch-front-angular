@@ -124,6 +124,11 @@ p {
   margin-right: auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+
+  @media (max-width: 768px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 /* Utilitários de Gradiente */
@@ -220,12 +225,4 @@ p {
 
 .animar-entrada {
   animation: fade-in-up 0.6s ease-out forwards;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 }

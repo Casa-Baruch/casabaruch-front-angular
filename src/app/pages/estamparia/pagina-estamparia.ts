@@ -13,7 +13,7 @@ export class PaginaEstampariaComponent {
   produtos = [
     {
       nome: 'Camisetas Personalizadas',
-      descricao: 'Algodão premium, diversos tamanhos e cores. Estampa duradoura.',
+      descricao: 'Algodão premium e diversas cores. Estampa duradoura.',
       imagem: 'assets/camisa-personalizada-lorrane.dev.png',
     },
     {

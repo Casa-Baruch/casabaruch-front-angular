@@ -15,8 +15,8 @@
 }
 
 .icone-container {
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   background: var(--whatsapp);
   border-radius: 50%;
   display: flex;
@@ -26,6 +26,21 @@
   transition: transform 0.3s ease;
   position: relative;
   z-index: 2;
+
+  @media (min-width: 1024px) {
+    width: 64px;
+    height: 64px;
+  }
+
+  svg {
+    width: 28px;
+    height: 28px;
+
+    @media (min-width: 1024px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
 
   &:hover {
     transform: scale(1.1);

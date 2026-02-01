@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 70px;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -11,8 +11,16 @@
   transition: all 0.3s ease;
   border-bottom: 1px solid rgba(226, 232, 240, 0.5);
 
+  @media (min-width: 1024px) {
+    height: 80px;
+  }
+
   &.scrolled {
-    height: 70px;
+    height: 60px;
+
+    @media (min-width: 1024px) {
+      height: 70px;
+    }
     box-shadow: var(--shadow-soft);
   }
 }
@@ -148,7 +156,7 @@ app-logo {
 
 .navegacao-mobile {
   position: fixed;
-  top: 80px;
+  top: 70px;
   left: 0;
   right: 0;
   background: white;
@@ -158,6 +166,10 @@ app-logo {
   visibility: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 1024px) {
+    top: 80px;
+  }
 
   &.aberto {
     transform: translateY(0);

@@ -47,31 +47,54 @@
 }
 
 .links,
-.lista-servicos,
+.lista-servicos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+
+  a,
+  li {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    font-size: var(--font-sm);
+    transition: all 0.2s ease;
+    font-weight: 500;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
 .infos-contato {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   list-style: none;
-}
 
-.links a,
-.lista-servicos li,
-.info {
-  color: rgba(255, 255, 255, 0.65);
-  text-decoration: none;
-  font-size: var(--font-sm);
-  transition: all 0.2s ease;
-  font-weight: 500;
-}
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    font-size: var(--font-sm);
+    transition: all 0.2s ease;
+    font-weight: 500;
 
-.links a:hover,
-.info:hover {
-  color: white;
-}
+    svg {
+      flex-shrink: 0;
+      color: var(--primary);
+    }
 
-.info:hover {
-  color: var(--primary);
+    &:hover {
+      color: white;
+      svg {
+        color: white;
+      }
+    }
+  }
 }
 
 .barra-inferior {

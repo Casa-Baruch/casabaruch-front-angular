@@ -26,7 +26,7 @@ export class PaginaInicialComponent {
     {
       nome: 'Cartões de Visita',
       descricao: 'Impressão premium para uma primeira impressão marcante.',
-      imagem: 'assets/cartao-visita.jpg',
+      imagem: 'assets/cartao-de-visita.png',
     },
     {
       nome: 'Tags e Etiquetas',
@@ -56,19 +56,44 @@ export class PaginaInicialComponent {
 
   produtosEscolares = [
     {
-      nome: 'Etiquetas Escolares',
-      descricao: 'Para cadernos, livros, lápis e canetas. À prova d’água.',
+      nome: 'Kits de Etiquetas Personalizadas',
+      descricao:
+        'Etiquetas para cadernos e livros, materiais pequenos (lápis e canetinhas) e uniformes. Resistentes à água e com cola extra forte.',
       imagem: 'assets/etiqueta-infantil.png',
     },
     {
-      nome: 'Tags de Mochila',
-      descricao: 'Tags rígidas para identificação de mochilas e lancheiras.',
-      imagem: 'assets/identificacao-aluno.jpg',
+      nome: 'Planner escolar semanal',
+      descricao: 'Espaço para tarefas, horários e lembretes de material.',
+      imagem: 'assets/planner.png',
     },
     {
-      nome: 'Certificados e Pedagógico',
-      descricao: 'Certificados, flashcards e cartazes para professores.',
+      nome: 'Flashcards educativos',
+      descricao:
+        'Alfabeto, números, sílabas e formas. Impressão frente/verso em alta qualidade.',
+      imagem: 'assets/flashcards.png',
+    },
+    {
+      nome: 'Certificados escolares',
+      descricao:
+        'Aluno destaque, leitor do mês, conclusão de semestre e participações especiais.',
       imagem: 'assets/certificado.png',
+    },
+    {
+      nome: 'Bloquinhos de anotação',
+      descricao: 'Capa personalizada com o nome da criança.',
+      imagem: 'assets/bloquinho-anotacao.png',
+    },
+    {
+      nome: 'Folhas de atividades',
+      descricao:
+        'Caligrafia, matemática básica e coordenação motora para pré-escola.',
+      imagem: 'assets/caligrafica.png',
+    },
+    {
+      nome: 'Capas para trabalhos',
+      descricao:
+        'Capas prontas e personalizadas com espaço para preencher os dados do aluno.',
+      imagem: 'assets/capa-de-trabalho.png',
     },
   ];
 
@@ -102,23 +127,44 @@ export class PaginaInicialComponent {
     {
       nome: 'Mariana Silva',
       texto:
-        'Os cartões de visita premium ficaram incríveis! A qualidade do papel e da impressão superou minhas expectativas.',
+        'As etiquetas escolares são incríveis! Coloquei nos potinhos de lanche e garrafinhas, lavo todo dia e continuam perfeitas. Finalmente um kit que dura o ano todo.',
       estrelas: 5,
       foto: 'assets/user-1.jpg',
     },
     {
-      nome: 'Ricardo Oliveira',
+      nome: 'Juliana Mendes',
       texto:
-        'Os adesivos personalizados para minha empresa ficaram perfeitos. Atendimento rápido e entrega antes do prazo.',
+        'As etiquetas para uniforme salvaram a vida! Meu filho perdia blusa toda semana na escola, agora com o nome bem visível na etiqueta interna, tudo volta para casa.',
       estrelas: 5,
-      foto: 'assets/user-2.jpg',
+      foto: 'assets/user-4.jpg',
     },
     {
       nome: 'Ana Paula',
       texto:
-        'Precisei de tags urgentes para minha loja e a Casa Baruch entregou com uma qualidade impecável e muita agilidade.',
+        'Sou professora e encomendei os flashcards e cartazes para minha sala. A qualidade da impressão é impecável e as crianças ficaram encantadas com o material.',
       estrelas: 5,
       foto: 'assets/user-3.jpg',
+    },
+    {
+      nome: 'Ricardo Oliveira',
+      texto:
+        'O planner escolar ajudou muito na rotina do meu pequeno. Ele mesmo marca as tarefas e o espaço para "levar na mochila" evitou muitos esquecimentos.',
+      estrelas: 5,
+      foto: 'assets/user-2.jpg',
+    },
+    {
+      nome: 'Carla Ferraz',
+      texto:
+        'As capas para trabalhos escolares são um diferencial maravilhoso. A escola sempre pede e ter uma capa personalizada e prontinha facilita muito nossa vida de mãe.',
+      estrelas: 5,
+      foto: 'assets/user-5.jpg',
+    },
+    {
+      nome: 'Pedro Santos',
+      texto:
+        'Fizemos os bloquinhos personalizados com o nome dele e ele amou! Ficou super empolgado para escrever e desenhar. Atendimento nota 10 e entrega rápida.',
+      estrelas: 5,
+      foto: 'assets/user-6.jpg',
     },
   ];
 

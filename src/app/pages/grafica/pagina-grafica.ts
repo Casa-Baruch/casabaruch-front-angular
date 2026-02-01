@@ -13,13 +13,13 @@ export class PaginaGraficaComponent {
   produtos = [
     {
       nome: 'Adesivos Personalizados',
-      descricao: 'Vinil, papel, transparente. Diversos formatos e acabamentos.',
+      descricao: 'Vinil, transparente. Diversos formatos e acabamentos.',
       imagem: 'assets/adesivos-casabaruch.png',
     },
     {
       nome: 'Cartões de Visita',
-      descricao: 'Couché, kraft, verniz localizado. Impressão frente e verso.',
-      imagem: 'assets/produto-cartoes.jpg',
+      descricao: 'Impressão premium frente e verso.',
+      imagem: 'assets/cartao-de-visita.png',
     },
     {
       nome: 'Tags e Etiquetas',
@@ -28,7 +28,7 @@ export class PaginaGraficaComponent {
     },
     {
       nome: 'Folders e Panfletos',
-      descricao: 'Diversos tamanhos e dobras. Ideal para divulgação.',
+      descricao: 'Ideal para divulgação.',
       imagem: 'assets/produto-folders.jpg',
     },
     {
@@ -38,7 +38,7 @@ export class PaginaGraficaComponent {
     },
     {
       nome: 'Embalagens e Lembrancinhas',
-      descricao: 'Caixas milk, sacolas e papel de seda personalizados.',
+      descricao: 'Caixas milk, sacolas e brindes personalizados.',
       imagem: 'assets/caixa-milk.png',
     },
   ];
