@@ -3,14 +3,16 @@
     <div class="container content-wrapper">
       <div class="card-redirect animar-entrada">
         <div class="loader-section">
-          <div class="spinner"></div>
+          <div class="spinner-container">
+            <div class="spinner"></div>
+            <div class="countdown-number">{{ countdown }}</div>
+          </div>
           <h1 class="titulo-home">
             Redirecionando para o 
             <span class="cor-primaria">WhatsApp</span>
           </h1>
           <p class="paragrafo-home">
-            Você será levado ao nosso atendimento oficial em 
-            <strong>{{ countdown }}</strong> segundos.
+            Você será levado ao nosso atendimento oficial em instantes.
           </p>
           
           <button (click)="manualRedirect()" class="botao-hero-primary">
