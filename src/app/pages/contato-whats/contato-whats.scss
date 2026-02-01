@@ -1,0 +1,141 @@
+.redirect-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+
+  .content-box {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+
+  .loader-section {
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 1.5rem;
+      color: #333;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #25d366;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    &:hover {
+      background-color: #128c7e;
+      transform: translateY(-2px);
+    }
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 2rem 0;
+  }
+
+  .compliance-content {
+    h2 {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #777;
+    }
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+
+    .service-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #fcfcfc;
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: 1px solid #f0f0f0;
+      font-size: 0.9rem;
+      color: #555;
+
+      i {
+        color: var(--primary-color, #ff6b00);
+      }
+    }
+  }
+
+  .legal-info {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #999;
+
+    a {
+      color: var(--primary-color, #ff6b00);
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+
+    .disclaimer {
+      margin-top: 1rem;
+      font-style: italic;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .redirect-container {
+    padding: 1rem;
+    
+    .content-box {
+      padding: 2rem 1.5rem;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+<section class="redirect-container">
+  <div class="content-box">
+    <div class="loader-section">
+      <div class="spinner"></div>
+      <h1>Redirecionando para o WhatsApp...</h1>
+      <p>Você será levado ao nosso atendimento oficial em <strong>{{ countdown }}</strong> segundos.</p>
+      
+      <button (click)="manualRedirect()" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Ir para o WhatsApp agora
+      </button>
+    </div>
+
+    <hr>
+
+    <div class="compliance-content">
+      <h2>Casa Baruch - Gráfica & Estamparia</h2>
+      <p>Somos especialistas em soluções personalizadas para você e sua empresa:</p>
+      
+      <div class="services-grid">
+        <div class="service-item">
+          <i class="fas fa-print"></i>
+          <span>Gráfica Rápida</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-tshirt"></i>
+          <span>Estamparia</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-school"></i>
+          <span>Linha Escolar</span>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-birthday-cake"></i>
+          <span>Linha Festas</span>
+        </div>
+      </div>
+
+      <div class="legal-info">
+        <p>Ao continuar, você concorda com nossos <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>.</p>
+        <p class="disclaimer">Este é um canal de atendimento direto para orçamentos e dúvidas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Schema.org for Google Ads compliance -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "mainEntity": {
+    "@type": "ContactPoint",
+    "telephone": "+55-11-92273-2828",
+    "contactType": "customer service",
+    "areaServed": "BR",
+    "availableLanguage": "Portuguese"
+  }
+}
+</script>

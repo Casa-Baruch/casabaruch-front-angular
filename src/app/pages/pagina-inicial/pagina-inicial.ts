@@ -6,7 +6,7 @@ import { IconeComponent } from '../../components/marca/icone/icone';
 @Component({
   selector: 'app-pagina-inicial',
   standalone: true,
-  imports: [CommonModule, IconeComponent],
+  imports: [CommonModule, IconeComponent, RouterLink],
   templateUrl: './pagina-inicial.html',
   styleUrl: './pagina-inicial.scss',
 })
