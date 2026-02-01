@@ -43,7 +43,8 @@ export class PaginaInicialComponent {
     },
     {
       nome: 'Toalinhas e Canecas',
-      descricao: 'Personalizadas para presentes, escola ou brindes corporativos.',
+      descricao:
+        'Personalizadas para presentes, escola ou brindes corporativos.',
       imagem: 'assets/toalinha-personalizada.png',
     },
     {
@@ -67,7 +68,7 @@ export class PaginaInicialComponent {
     {
       nome: 'Certificados e Pedagógico',
       descricao: 'Certificados, flashcards e cartazes para professores.',
-      imagem: 'assets/pedagogico.jpg',
+      imagem: 'assets/certificado.png',
     },
   ];
 
