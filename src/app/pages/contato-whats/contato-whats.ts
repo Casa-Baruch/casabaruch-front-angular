@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
+import { LogoComponent } from '../../components/marca/logo/logo';
 
 @Component({
   selector: 'app-contato-whats',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, LogoComponent],
   templateUrl: './contato-whats.html',
   styleUrl: './contato-whats.scss'
 })

@@ -39,6 +39,18 @@
   }
 }
 
+.logo-wrapper {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  transform: scale(1.2);
+
+  @media (min-width: 768px) {
+    margin-bottom: 3rem;
+    transform: scale(1.4);
+  }
+}
+
 .loader-section {
   display: flex;
   flex-direction: column;
