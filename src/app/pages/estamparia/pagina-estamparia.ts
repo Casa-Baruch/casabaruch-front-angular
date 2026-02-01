@@ -14,12 +14,12 @@ export class PaginaEstampariaComponent {
     {
       nome: 'Camisetas Personalizadas',
       descricao: 'Algodão premium, diversos tamanhos e cores. Estampa duradoura.',
-      imagem: '/assets/camisa-personalizada-lorrane.dev.png',
+      imagem: 'assets/camisa-personalizada-lorrane.dev.png',
     },
     {
-      nome: 'Canecas',
-      descricao: 'Cerâmica e polímero. Personalize com fotos, logos ou artes.',
-      imagem: 'assets/produto-canecas.jpg',
+      nome: 'Toalinhas e Canecas',
+      descricao: 'Cerâmica, polímero e tecido. Personalize com fotos, logos ou artes.',
+      imagem: 'assets/toalinha-personalizada.png',
     },
     {
       nome: 'Ecobags',

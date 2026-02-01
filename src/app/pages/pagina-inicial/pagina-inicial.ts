@@ -21,7 +21,7 @@ export class PaginaInicialComponent {
     {
       nome: 'Adesivos',
       descricao: 'Personalizados em diversos formatos e materiais.',
-      imagem: '/assets/adesivos-casabaruch.png',
+      imagem: 'assets/adesivos-casabaruch.png',
     },
     {
       nome: 'Cartões de Visita',
@@ -31,7 +31,7 @@ export class PaginaInicialComponent {
     {
       nome: 'Tags e Etiquetas',
       descricao: 'O toque final perfeito para seus produtos.',
-      imagem: '/assets/tags.png',
+      imagem: 'assets/tags.png',
     },
   ];
 
@@ -39,12 +39,12 @@ export class PaginaInicialComponent {
     {
       nome: 'Camisetas',
       descricao: 'Estampas duráveis com cores vibrantes.',
-      imagem: '/assets/camisa-personalizada-lorrane.dev.png',
+      imagem: 'assets/camisa-personalizada-lorrane.dev.png',
     },
     {
       nome: 'Toalinhas e Canecas',
       descricao: 'Personalizadas para presentes, escola ou brindes corporativos.',
-      imagem: 'assets/canecas.jpg',
+      imagem: 'assets/toalinha-personalizada.png',
     },
     {
       nome: 'Ecobags',
@@ -57,7 +57,7 @@ export class PaginaInicialComponent {
     {
       nome: 'Etiquetas Escolares',
       descricao: 'Para cadernos, livros, lápis e canetas. À prova d’água.',
-      imagem: '/assets/etiqueta-infantil.png',
+      imagem: 'assets/etiqueta-infantil.png',
     },
     {
       nome: 'Tags de Mochila',
@@ -75,12 +75,12 @@ export class PaginaInicialComponent {
     {
       nome: 'Topper de Bolo e Tags',
       descricao: 'Tags para lembrancinhas e toppers personalizados.',
-      imagem: '/assets/topper-de-bolo.png',
+      imagem: 'assets/topper-de-bolo.png',
     },
     {
       nome: 'Rótulos e Convites',
       descricao: 'Convites digitais/impressos e rótulos para guloseimas.',
-      imagem: '/assets/convite.png',
+      imagem: 'assets/convite.png',
     },
     {
       nome: 'Lembrancinhas',
